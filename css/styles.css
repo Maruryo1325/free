@@ -23,7 +23,7 @@ header ul {
   display: flex;
   font-size:12px;
   gap: 18px;
-  outline: 2px solid red
+  outline: 2px solid red;
 }
 header a {
   text-decoration: none;
@@ -40,7 +40,15 @@ main .mainvisual{
   height: 420px;
   max-width: 1920px;
   object-fit: cover;
-  margin-top: 16px
+  display: inline-block;
+  margin-top: 16px;
+}
+.about h1 {
+  text-align: center;
+  margin: 64px auto 30px;
+}
+.container {
+  margin: 0 16px 0;
 }
 
 
