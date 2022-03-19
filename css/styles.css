@@ -32,11 +32,15 @@ header a {
   margin: 16px auto 0;
   width: 270px;
 }
+img {
+  width: 100%;
+}
 main .mainvisual{
   width: 100%;
   height: 420px;
   max-width: 1920px;
   object-fit: cover;
+  margin-top: 16px
 }
 
 
