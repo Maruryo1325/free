@@ -29,8 +29,11 @@ header h1 {
 }
 header ul {
   display: flex;
-  font-size:13px;
+  font-size:12px;
   gap: 18px;
+}
+header nav {
+  margin-left: 7%;
 }
 header a {
   text-decoration: none;
@@ -151,8 +154,13 @@ small {
     margin: 0 20px 0;
     justify-content: space-between;
   }
+  header h1 {
+    flex: 2
+  }
   header nav {
     line-height: 40px;
+    flex: 5;
+    margin-left: 20%;
   }
   header li img {
     margin-top: 10px;
