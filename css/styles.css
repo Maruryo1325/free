@@ -4,7 +4,7 @@ body {
 }
 h1,h2,h3,p {
   margin: 0;
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 ul {
   list-style: none;
@@ -25,13 +25,12 @@ header h1 {
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
-  margin-top: 20px
+  margin-top: 20px;
 }
 header ul {
   display: flex;
   font-size:12px;
   gap: 18px;
-  outline: 2px solid red;
 }
 header a {
   text-decoration: none;
@@ -45,47 +44,56 @@ main .mainvisual{
   height: 420px;
   max-width: 1920px;
   object-fit: cover;
-  display: inline-block;
+  display: inline-block; 
   margin-top: 16px;
 }
 .about h1 {
   text-align: center;
-  margin: 64px auto 30px;
+  margin: 80px auto 70px;
+}
+main p {
+  font-size: 14px;
 }
 .container {
-  margin: 0 10px 0;
+  margin: 0 auto 0;
 }
 .about p+p {
   margin-top: 24px
 }
 .works h1 {
   text-align: center;
-  margin: 64px auto 30px;
+  margin: 140px auto 80px;
 }
 .works li {
   margin-bottom: 24px;
 }
 .news h1 {
   text-align: center;
-  margin: 64px auto 30px;
+  margin: 90px auto 50px;
 }
 
 .news dl {
-  margin: 0 16px;
-  border-top: 1px solid black;
+  margin: 0 auto 16px;
+  /* border-top: 1px solid black; */
 }
 .news dt {
   padding-top: 16px;
-  margin: 0 24px 0;
+  margin: 0 10px 0;
 }
 .news dd {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   padding-bottom: 16px;
-  margin: 0 24px 0;
+  margin: 0 10px 0;
+}
+.ab {
+  border-bottom: 1px solid gainsboro;
+}
+.ab:first-child {
+  border-top: 1px solid gainsboro;
 }
 .contact h1 {
   text-align: center;
-  margin: 64px auto 30px;
+  margin: 150px auto 60px;
 }
 .contact dl {
   margin: 0 24px 0; 
@@ -136,10 +144,86 @@ small {
 
 
 /* midium screen */
+@media (min-width:600px) {
+  header {
+    display: flex;
+    padding: 80px 0 80px;
+    margin: 0 20px 0;
+    justify-content: space-between;
+  }
+  header nav {
+    line-height: 40px;
+  }
+  header li img {
+    margin-top: 10px;
+  }
+  header ul {
+    gap: 25px;
+  }
+  .mainvisual img {
+    height: 400px;
+    object-fit: none;
+  }
+  .works ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .works li {
+    width: 31%;
+    margin-bottom: 24px;
+  }
+  .news dl {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .news dt {
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+  }
+  .news dd {
+    width: 80%;
+    padding: 10px;
+  }
+  .ab {
+    display: flex;
+    width: 800px;
+  }
+  .cd {
+    display: flex;
+    margin: 12px auto 12px;
+  }
+  .cd dt {
+    flex: 1;
+    margin-top: 0;
+  }
+  .cd dd {
+    flex: 5;
+  }
 
+  .contact input {
+    line-height: 32px;
+  }
+  .contact textarea{
+    height: 150px;
+  }
+}
 
 
 
 
 
 /* large screen */
+@media (min-width:800px) {
+  header {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  main section{
+    max-width: 840px;
+    margin: 0 auto;
+  }
+}
