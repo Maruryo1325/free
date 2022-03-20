@@ -29,7 +29,7 @@ header h1 {
 }
 header ul {
   display: flex;
-  font-size:12px;
+  font-size:13px;
   gap: 18px;
 }
 header a {
@@ -55,7 +55,7 @@ main p {
   font-size: 14px;
 }
 .container {
-  margin: 0 auto 0;
+  margin: 0 14px 0;
 }
 .about p+p {
   margin-top: 24px
