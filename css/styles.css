@@ -125,7 +125,7 @@ main p {
   background-color: black;
   color: white;
   border: 1px solid black;
-  margin: 30px auto 140px;
+  margin: 30px auto 80px;
 }
 .contact .button input:hover {
   background-color: #fff;
@@ -189,7 +189,6 @@ small {
   .news dl {
     display: flex;
     flex-wrap: wrap;
-    
   }
   .news dt {
     width: 20%;
@@ -214,13 +213,6 @@ small {
   }
   .cd dd {
     flex: 5;
-  }
-
-  .contact input {
-    line-height: 32px;
-  }
-  .contact textarea{
-    height: 150px;
   }
 }
 
