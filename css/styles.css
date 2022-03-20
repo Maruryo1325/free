@@ -29,7 +29,7 @@ header h1 {
 }
 header ul {
   display: flex;
-  font-size:12px;
+  font-size:14px;
   gap: 18px;
 }
 header nav {
@@ -40,7 +40,7 @@ header a {
 }
 .float {
   margin: 16px auto 0;
-  width: 270px;
+  width: 300px;
 }
 main .mainvisual{
   width: 100%;
